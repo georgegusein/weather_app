@@ -1,0 +1,30 @@
+{
+  "name": "weather_app",
+  "version": "1.0.0",
+  "description": "city find api for weather app",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/georgegusein/weather_app.git"
+  },
+  "keywords": [
+    "weather",
+    "api"
+  ],
+  "author": "George Gusein",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/georgegusein/weather_app/issues"
+  },
+  "homepage": "https://github.com/georgegusein/weather_app#readme",
+  "dependencies": {
+    "body-parser": "^1.18.1",
+    "cors": "^2.8.4",
+    "express": "^4.15.4",
+    "mongojs": "^2.4.1",
+    "save": "^2.3.1"
+  }
+}

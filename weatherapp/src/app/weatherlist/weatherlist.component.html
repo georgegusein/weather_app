@@ -1,0 +1,24 @@
+<div class="container-fluid text-center">
+  <h1>Weather</h1>
+
+  <div class="row">
+    <div class="col-sm-2"  > </div>
+    <div class="col-sm-8"  >
+      <input #box (keyup)=findCity(box.value) type="text" class="form-control"  placeholder="Find city" >
+      <ul *ngIf="cities">
+        <li *ngFor="let ci of cities" (click)=showWether(ci.name)>City: {{ci.name}} Country: {{ci.country}}</li>
+      </ul>
+      </div>
+    <div class="col-sm-2"  > </div>
+  </div>
+</div>
+<br><hr>
+<div *ngIf="city" class="container text-center">
+  <div class="panel panel-default">
+      <div class="row">
+        <div class="col-xs-6" ><h2>{{city}}</h2><p>{{weather}}</p></div>
+        <div class="col-xs-3" ><img src="https://openweathermap.org/img/w/{{icon}}.png" alt={{city}} width="50" height="50"></div>
+        <div class="col-xs-3" ><p>{{tempetature}} °C</p></div>
+      </div>
+  </div>
+</div>
